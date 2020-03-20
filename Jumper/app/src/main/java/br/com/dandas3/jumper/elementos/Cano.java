@@ -50,4 +50,8 @@ public class Cano {
     public boolean saiuTela() {
         return posicao + LARGURA_CANO < 0;
     }
+
+    public int getPosicao() {
+        return this.posicao;
+    }
 }

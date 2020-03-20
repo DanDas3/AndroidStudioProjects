@@ -31,7 +31,10 @@ public class Passaro {
 
     public void cai() {
         boolean chegouChao = (altura + RAIO) > tela.getAltura();
-        this.altura += 5;
+
+        if(!chegouChao) {
+            this.altura += 5;
+        }
     }
 
     public void pula() {

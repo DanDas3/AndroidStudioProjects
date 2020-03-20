@@ -13,6 +13,8 @@ public class Canos {
     private static final int DISTANCIA_ENTRE_CANOS = 250;
     private Tela tela;
     private List<Cano> canos = new ArrayList<Cano>();
+    private int alturaCanoSuperior;
+    private int alturaCanoInferior;
 
     public Canos(Tela tela) {
         int posicaoInicial = 200;
@@ -46,6 +48,11 @@ public class Canos {
     }
 
     private int getMaximo() {
+        int maximo = 0;
 
+        for (Cano cano: canos) {
+            maximo = Math.max(cano.getPosicao(), maximo);
+        }
+        return maximo;
     }
 }

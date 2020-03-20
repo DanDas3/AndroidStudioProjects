@@ -28,7 +28,7 @@ public class Game extends SurfaceView  implements Runnable, View.OnTouchListener
         super(context);
         this.inializaElementos();
         this.setOnTouchListener(this);
-        tela = new Tela(context);
+        this.tela = new Tela(context);
         Bitmap back = BitmapFactory.decodeResource(this.getResources(), R.drawable.background);
         this.background = Bitmap.createScaledBitmap(back, back.getWidth(), tela.getAltura(), false);
     }
