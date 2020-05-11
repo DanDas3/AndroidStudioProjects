@@ -1,2 +1,3 @@
 rootProject.name='OpenCVMobile'
 include ':app'
+include ':OpenCV430Android'
